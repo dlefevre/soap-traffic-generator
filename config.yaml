@@ -1,0 +1,3 @@
+thinktime: 0.1
+threads: 0
+wsdl: http://localhost:8080/wstest/UniversalLawsService?wsdl
