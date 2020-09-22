@@ -1,3 +1,5 @@
+#!/usr/bin/python3 
+
 from zeep import Client
 import yaml
 import io
