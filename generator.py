@@ -90,7 +90,6 @@ def main():
         sys.exit(1)
 
     config = loadConfig()
-    print("config: " + str(config))
 
     for opt, arg in opts:
         if opt in ("-h", "--help"):
