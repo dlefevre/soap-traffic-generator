@@ -54,6 +54,8 @@ def masterLoop():
     while True:
         config = loadConfig()
         threads = config["threads"]
+        if threads < 0:
+            threads = 0
 
         if threads < nthreads:
             tmp = []
@@ -73,7 +75,7 @@ def masterLoop():
                 procs.append(thread)
                 nthreads = nthreads + 1
 
-        if nthreads <= 0:
+        if config[threads] < 0:
             return
 
         time.sleep(1)
